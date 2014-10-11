@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<title>Para Analytics</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$.getJSON("output.json").then(function (data) {
+    window.paraData = data;
+    console.log("Here's the data", data);
+});
+</script>
+</head>
+
+<body>
+<p>Open up the console. The data is logged, and is stored in window.paraData</p>
+</body>
+</html>
